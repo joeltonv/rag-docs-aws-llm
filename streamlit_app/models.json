@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Meta Llama 4 Maverick 17B Instruct",
+    "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0"
+  },
+  {
+    "label": "DeepSeek V3.2",
+    "model_id": "deepseek.v3.2"
+  },
+  {
+    "label": "Mistral Large 3 675B Instruct",
+    "model_id": "mistral.mistral-large-3-675b-instruct"
+  }
+]

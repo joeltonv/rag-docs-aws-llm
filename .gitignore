@@ -1,0 +1,47 @@
+# Ignorar o ambiente virtual local
+venv/
+.venv/
+.env
+
+# Ignorar o banco de dados SQLite local (ele deve ser gerado por script)
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+# Ignorar a pasta de índices do banco vetorial local
+chroma_db/
+
+# Ignorar Markdown gerado pelo pipeline de conversão
+docs_markdown/
+
+# Documentação bruta de origem (extraída dos .chm, não versionada)
+docs/
+
+# Modelos de embedding locais (baixados via run_once_download.py)
+modelos/
+
+# Artefatos gerados pelos experimentos (reproduzíveis via avaliador_experimental.py
+# e metrics_pipeline.py). Mantém apenas scripts e rascunhos manuais.
+results/*.csv
+results/*.log
+results/*.md
+results/analise_experimento/*.csv
+results/analise_experimento/*.log
+results/analise_experimento/relatorio_*.md
+results/analise_experimento/figures/
+
+# Dataset padrão-ouro gerado (reproduzível com seed fixa via dataset_builder.py)
+datasets/
+
+# Ignorar caches do Python e logs
+__pycache__/
+*.py[cod]
+*.pytest_cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.pyc
+.DS_Store
